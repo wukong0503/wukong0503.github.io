@@ -127,8 +127,8 @@ comments:
   ## Gitalk
   # please refer to https://github.com/gitalk/gitalk for more info.
   gitalk:
-    clientID    : 1bb3d9f8f715e664cc1f # GitHub Application Client ID
-    clientSecret: 3a4922168b8fe8cd6f32ab23635830ae022166f0 # GitHub Application Client Secret
+    clientID    : 8f115c7cba3232e049a7 # GitHub Application Client ID
+    clientSecret: 514ee2dc6f24519983f15d282aae4881e52b2415 # GitHub Application Client Secret
     repository  : wukong0503.github.io # GitHub repo
     owner       : wukong0503 # GitHub repo owner
     admin       :  # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
@@ -151,9 +151,9 @@ pageview:
 
   ## Leancloud
   leancloud:
-    app_id    : BIvg1NQSUQmX764LyvNb7egO-gzGzoHsz # LeanCloud App id
+    app_id    : BIvg1NQSUQmX764LyvNb7egO-gzGzoHsz  # LeanCloud App id
     app_key   : q3pSmBpDbQ9d0PYstMwklj3b # LeanCloud App key
-    app_class : Test # LeanCloud App class
+    app_class : wukong0503 # LeanCloud App class
 
 
 ## => Search

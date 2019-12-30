@@ -25,6 +25,7 @@ key: page-about
   - [三大特性-继承](https://www.cnblogs.com/chenssy/p/3354884.html)
   - [三大特性-多态](https://www.cnblogs.com/crane-practice/p/3671074.html)
   - [反射机制](http://tengj.top/2016/04/28/javareflect/)
+  - [String.intern()](https://mp.weixin.qq.com/s/k_eVh4qIz9QZJHqddqdxTg)
 
 - [网络](#网络)
   - [《一套题》](https://github.com/Snailclimb/JavaGuide/blob/master/docs/network/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C.md)
@@ -45,6 +46,8 @@ key: page-about
   - [Redis为什么用跳表而不用平衡树？](https://mp.weixin.qq.com/s?__biz=MzA4NTg1MjM0Mg==&mid=2657261425&idx=1&sn=d840079ea35875a8c8e02d9b3e44cf95#rd)
   - [redis缓存淘汰策略](https://mp.weixin.qq.com/s?__biz=MzA4NTg1MjM0Mg==&mid=2657261425&idx=1&sn=d840079ea35875a8c8e02d9b3e44cf95#rd)
   - [《一套题》](https://snailclimb.gitee.io/javaguide/#/docs/database/Redis/Redis)
+- [数据结构与算法]()
+  - [HashMap](https://zhuanlan.zhihu.com/p/21673805)
 
 
 

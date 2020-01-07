@@ -51,13 +51,3 @@ key: page-about
 
 
 
-Just say something about yourself. :+1:
-
-{% highlight java %}
-for (int i = 0; i < objectArray1.length; i++) {
-  if (!equals(objectArray1[i], objectArray2[i])) {
-    return false;
-  }
-}
-{% endhighlight %}
-

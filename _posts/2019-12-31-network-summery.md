@@ -1,6 +1,8 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+---
+title: 【整理】计算机网络
+tags: 计算机网络
+key: 2019123101
+---
 
 - [OSI七层模型和TCP/IP四层模型](#osi%E4%B8%83%E5%B1%82%E6%A8%A1%E5%9E%8B%E5%92%8Ctcpip%E5%9B%9B%E5%B1%82%E6%A8%A1%E5%9E%8B)
   - [应用层](#%E5%BA%94%E7%94%A8%E5%B1%82)
@@ -31,13 +33,7 @@
 - [从输入网址到获得页面的过程☆☆☆☆☆](#%E4%BB%8E%E8%BE%93%E5%85%A5%E7%BD%91%E5%9D%80%E5%88%B0%E8%8E%B7%E5%BE%97%E9%A1%B5%E9%9D%A2%E7%9A%84%E8%BF%87%E7%A8%8B%E2%98%86%E2%98%86%E2%98%86%E2%98%86%E2%98%86)
 - [参考](#%E5%8F%82%E8%80%83)
 
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
----
-title: 【整理】计算机网络
-tags: 计算机网络
-key: 2019123101
----
 
 #### OSI七层模型和TCP/IP四层模型
 

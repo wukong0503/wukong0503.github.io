@@ -4,49 +4,43 @@ tags: 计算机网络
 key: 2019123101
 ---
 
-- [OSI七层模型和TCP/IP四层模型](#osi%E4%B8%83%E5%B1%82%E6%A8%A1%E5%9E%8B%E5%92%8Ctcpip%E5%9B%9B%E5%B1%82%E6%A8%A1%E5%9E%8B)
-  - [应用层](#%E5%BA%94%E7%94%A8%E5%B1%82)
-  - [传输层](#%E4%BC%A0%E8%BE%93%E5%B1%82)
-  - [网络层](#%E7%BD%91%E7%BB%9C%E5%B1%82)
-  - [数据链路层](#%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82)
-  - [物理层](#%E7%89%A9%E7%90%86%E5%B1%82)
-- [三次握手与四次挥手过程](#%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E4%B8%8E%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B%E8%BF%87%E7%A8%8B)
-  - [三次握手](#%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B)
-  - [为什么需要三次握手，两次不行吗？](#%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E4%B8%A4%E6%AC%A1%E4%B8%8D%E8%A1%8C%E5%90%97)
-  - [四次挥手](#%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B)
-  - [为什么建立连接是三次握手，而关闭连接却是四次挥手呢？](#%E4%B8%BA%E4%BB%80%E4%B9%88%E5%BB%BA%E7%AB%8B%E8%BF%9E%E6%8E%A5%E6%98%AF%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E8%80%8C%E5%85%B3%E9%97%AD%E8%BF%9E%E6%8E%A5%E5%8D%B4%E6%98%AF%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B%E5%91%A2)
-  - [客户端不断进行请求链接会怎样？DDos(Distributed Denial of Service)攻击？](#%E5%AE%A2%E6%88%B7%E7%AB%AF%E4%B8%8D%E6%96%AD%E8%BF%9B%E8%A1%8C%E8%AF%B7%E6%B1%82%E9%93%BE%E6%8E%A5%E4%BC%9A%E6%80%8E%E6%A0%B7ddosdistributed-denial-of-service%E6%94%BB%E5%87%BB)
-- [TCP与UDP](#tcp%E4%B8%8Eudp)
-  - [TCP与UDP的区别](#tcp%E4%B8%8Eudp%E7%9A%84%E5%8C%BA%E5%88%AB)
-  - [TCP报文格式](#tcp%E6%8A%A5%E6%96%87%E6%A0%BC%E5%BC%8F)
-  - [TCP协议如何来保证传输的可靠性](#tcp%E5%8D%8F%E8%AE%AE%E5%A6%82%E4%BD%95%E6%9D%A5%E4%BF%9D%E8%AF%81%E4%BC%A0%E8%BE%93%E7%9A%84%E5%8F%AF%E9%9D%A0%E6%80%A7)
-  - [滑动窗口和流量控制](#%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E5%92%8C%E6%B5%81%E9%87%8F%E6%8E%A7%E5%88%B6)
-  - [拥塞控制](#%E6%8B%A5%E5%A1%9E%E6%8E%A7%E5%88%B6)
-- [HTTP和HTTPS](#http%E5%92%8Chttps)
-  - [HTTP和HTTPS的区别](#http%E5%92%8Chttps%E7%9A%84%E5%8C%BA%E5%88%AB)
-  - [HTTP长连接、短连接](#http%E9%95%BF%E8%BF%9E%E6%8E%A5%E7%9F%AD%E8%BF%9E%E6%8E%A5)
-  - [HTTP1.0和HTTP1.1的主要区别是什么?](#http10%E5%92%8Chttp11%E7%9A%84%E4%B8%BB%E8%A6%81%E5%8C%BA%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88)
-  - [HTTP2.0](#http20)
-  - [Cookie和Session](#cookie%E5%92%8Csession)
-- [GET与POST的区别](#get%E4%B8%8Epost%E7%9A%84%E5%8C%BA%E5%88%AB)
-- [对称加密与非对称加密](#%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86%E4%B8%8E%E9%9D%9E%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86)
-- [从输入网址到获得页面的过程☆☆☆☆☆](#%E4%BB%8E%E8%BE%93%E5%85%A5%E7%BD%91%E5%9D%80%E5%88%B0%E8%8E%B7%E5%BE%97%E9%A1%B5%E9%9D%A2%E7%9A%84%E8%BF%87%E7%A8%8B%E2%98%86%E2%98%86%E2%98%86%E2%98%86%E2%98%86)
-- [参考](#%E5%8F%82%E8%80%83)
 
 
+## OSI七层模型和TCP/IP四层模型
 
-#### OSI七层模型和TCP/IP四层模型
+### 应用层
+**应用层的任务是通过进程间的交互来完成特定的网络应用。
+应用层协议定义的是应用进程间的通信和交互的规则。**
+对于不同的应用需要不同的应用层协议。如域名系统DNS，支持万维网应用的HTTP协议，支持电子邮件的SMTP协议等等。
+我们把应用层交互的数据单元称为报文。
 
-##### 应用层
+### 传输层
+**运输层的主要任务是负责向两台主机进程间的通信提供通用的数据传输服务。**
+**传输层负责将上层数据分段并提供端到端的、可靠的或不可靠的传输以及端到端的差错控制和流量控制问题；**
 
-##### 传输层
+运输层主要使用以下两种协议:
+ - 传输控制协议 TCP（Transmission Control Protocol）：提供面向连接的，可靠的数据传输服务。
+ - 用户数据协议 UDP（User Datagram Protocol）：提供无连接的，尽最大努力的数据传输服务（不保证数据传输的可靠性）。
 
-##### 网络层
+网络层只是根据网络地址将源结点发出的数据包传送到目的结点，而传输层则负责将数据可靠地传送到相应的端口。
 
-##### 数据链路层
+### 网络层
+**网络层负责对子网间的数据包进行路由选择。此外，网络层还可以实现拥塞控制、网际互连等功能；**基本数据单位为IP数据报；  
+包含的主要协议：
+ - IP协议（Internet Protocol，因特网互联协议）;
+ - ICMP协议（Internet Control Message Protocol，因特网控制报文协议）;
+ - ARP协议（Address Resolution Protocol，地址解析协议）;
+ - RARP协议（Reverse Address Resolution Protocol，逆地址解析协议）。
 
-##### 物理层
+### 数据链路层
+**数据链路层为网络层提供可靠的数据传输；主要功能有：**  
+ - 将数据组合成数据块，在数据链路层中称这种数据块为帧（frame），帧是数据链路层的传送单位；
+ - 控制帧在物理信道上的传输，包括如何处理传输差错，调节发送速率以使与接收方相匹配（流量控制、数据的检错、重发）；
+ - 以及在两个网络实体之间提供数据链路通路的建立、维持和释放的管理。
 
+### 物理层
+物理层(physical layer)的作用是实现相邻计算机节点之间比特流的透明传送，尽可能屏蔽掉具体传输介质和物理设备的差异。  
+该层为上层协议提供了一个传输数据的可靠的物理媒体。简单的说，物理层确保原始的数据可在各种物理媒体上传输。
 
 #### 三次握手与四次挥手过程
 
@@ -184,4 +178,4 @@ Socket是应用层与TCP/IP协议簇通信的中间软件抽象层，它是一�
 [JavaGuide/network](https://github.com/Snailclimb/JavaGuide/blob/master/docs/network/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C.md)
 [计算机网络基础知识总结](https://www.cnblogs.com/maybe2030/p/4781555.html#_label7)
 
-
+https://www.cnblogs.com/maybe2030/p/4781555.html
